@@ -12,3 +12,5 @@ admin user for the springboot realm with password admin
 testuser in group users with password password
 hruser in group users and group hrusers and password password
 client user for using admin client with password client
+
+To start a container use docker run -p 8180:8180 activiti/activiti-cloud-keycloak
