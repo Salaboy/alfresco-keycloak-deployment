@@ -382,7 +382,9 @@
     "clientAuthenticatorType" : "client-secret",
     "secret" : "f80d93b4-9039-4012-99c8-a45663485862",
     "redirectUris" : [ "http://localhost:*", "http://activiti-cloud-audit:*", "http://activiti-cloud-runtime-bundle:*", "http://activiti-cloud-gateway:*", "http://activiti-cloud-registry:*"],
-    "webOrigins" : [ ],
+    "webOrigins": [
+      "*"
+    ],
     "notBefore" : 0,
     "bearerOnly" : false,
     "consentRequired" : false,
