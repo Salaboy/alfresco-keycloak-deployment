@@ -2,6 +2,7 @@ FROM jboss/keycloak:3.2.0.Final
 MAINTAINER https://gitter.im/Activiti/Activiti7
 
 RUN /opt/jboss/keycloak/bin/add-user.sh -u admin -p admin
+RUN /opt/jboss/keycloak/bin/add-user-keycloak.sh -r master -u admin -p admin
 
 ADD springboot-realm.json /opt/jboss/keycloak/
 
