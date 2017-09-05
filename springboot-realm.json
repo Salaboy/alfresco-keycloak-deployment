@@ -390,7 +390,7 @@
     "clientRoles" : {
       "account" : [ "manage-account", "view-profile" ]
     },
-    "groups" : [ "/hr", "/testgroup" ]
+    "groups" : [ "/testgroup" ]
   } ],
   "clientScopeMappings" : {
     "realm-management" : [ {
