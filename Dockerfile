@@ -8,6 +8,8 @@ ADD springboot-realm.json /opt/jboss/keycloak/
 
 ENTRYPOINT [ "/opt/jboss/docker-entrypoint.sh" ]
 
-EXPOSE 8180
+ENV PORT_OFFSET 100
 
-CMD ["-b", "0.0.0.0", "-Dkeycloak.import=/opt/jboss/keycloak/springboot-realm.json -Djboss.socket.binding.port-offset=100"]
+EXPOSE 8180 30081
+
+CMD ["-b", "0.0.0.0", "-Dkeycloak.import=/opt/jboss/keycloak/springboot-realm.json -Djboss.socket.binding.port-offset=${env.PORT_OFFSET}"]
