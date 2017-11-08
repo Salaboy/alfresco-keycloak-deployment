@@ -1,4 +1,12 @@
 # activiti-cloud-sso-idm
+[![Join the chat at https://gitter.im/Activiti/Activiti7](https://badges.gitter.im/Activiti/Activiti7.svg)](https://gitter.im/Activiti/Activiti7?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+<p>
+  <a href='https://github.com/Activiti/activiti-cloud-sso-idm/blob/master/LICENSE.txt'>
+       <img src='https://img.shields.io/hexpm/l/plug.svg' alt='license' />
+  </a>
+  <a href="https://cla-assistant.io/Activiti/activiti-cloud-sso-idm"><img src="https://cla-assistant.io/readme/badge/Activiti/activiti-cloud-sso-idm" alt="CLA assistant" /></a>
+</p>
 
 Keycloak docker image used for Activiti tests and demos as a reference sso/idm implementation.
 
