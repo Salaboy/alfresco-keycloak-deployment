@@ -1,9 +1,9 @@
 FROM jboss/keycloak:3.4.0.Final
-MAINTAINER https://gitter.im/Activiti/Activiti7
+MAINTAINER https://gitter.im/Alfresco/platform-services
 
 RUN /opt/jboss/keycloak/bin/add-user.sh -u admin -p admin
 RUN /opt/jboss/keycloak/bin/add-user-keycloak.sh -r master -u admin -p admin
-
+ 
 ADD springboot-realm.json /opt/jboss/keycloak/
 
 ENTRYPOINT [ "/opt/jboss/docker-entrypoint.sh" ]

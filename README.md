@@ -1,4 +1,4 @@
-# activiti-cloud-sso-idm
+# alfresco-keycloak-deployment
 [![Join the chat at https://gitter.im/Activiti/Activiti7](https://badges.gitter.im/Activiti/Activiti7.svg)](https://gitter.im/Activiti/Activiti7?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 <p>
@@ -21,4 +21,4 @@ testuser in group users with password password
 hruser in group users and group hrusers and password password
 client user for using admin client with password client
 
-To start a container use docker run -p 8180:8180 activiti/activiti-cloud-sso-idm
+To start a container use docker run -p 8180:8180 alfresco/alfresco-keycloak
