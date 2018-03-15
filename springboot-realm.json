@@ -523,7 +523,7 @@
       "secret": "**********",
       "redirectUris" : [ "http://localhost:*" ],
       "webOrigins": [
-        "http://localhost:3000","http://activiti-cloud-demo-ui:3000"
+        "http://localhost:3000","http://activiti-cloud-demo-ui:3000","http://activiti-cloud-sso-idm-kub:30082","http://activiti-cloud-demo-ui:30082"
       ],
       "notBefore": 0,
       "bearerOnly": false,
