@@ -8,6 +8,7 @@ service:
   externalPort: 8180
   internalPort: 8180
   type: NodePort
-  
 ingress:
   path: /auth
+realm:
+  configName:

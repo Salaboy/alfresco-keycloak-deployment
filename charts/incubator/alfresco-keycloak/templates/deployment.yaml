@@ -21,3 +21,13 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - containerPort: {{ .Values.service.internalPort }}
+          volumeMounts:
+            - mountPath: /opt/jboss/alfresco
+              name: {{ template "alfresco-keycloak.fullname" . }}-realm-config
+      volumes:
+        - name: {{ template "alfresco-keycloak.fullname" . }}-realm-config
+          configMap:
+             name: "{{ .Values.realm.configName | default (printf "%s-realm-config" (include "alfresco-keycloak.fullname" .)) }}"
+             items:
+              - key: config
+                path: alfresco-realm.json
