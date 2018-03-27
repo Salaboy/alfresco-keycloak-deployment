@@ -1812,6 +1812,36 @@
     },
     "groups" : [ ]
   }, {
+    "id" : "47c3eaf1-1e91-4c6c-8c67-28d043983ba3",
+    "createdTimestamp" : 1522141924033,
+    "username" : "hradmin",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : false,
+    "firstName" : "hr",
+    "lastName" : "admin",
+    "email" : "hradmin@test.com",
+    "credentials" : [ {
+      "type" : "password",
+      "hashedSaltedValue" : "4cjNRreON91Pj07JOedebh/1I0Py8lLbet0EVPW43C0v7rtM349MMDO6PZbOkctRA9QXPhVgOn6sYOsvulrk5Q==",
+      "salt" : "5GzXqBdO6TpLHpGqPci0vg==",
+      "hashIterations" : 27500,
+      "counter" : 0,
+      "algorithm" : "pbkdf2-sha256",
+      "digits" : 0,
+      "period" : 0,
+      "createdDate" : 1522141939215,
+      "config" : { }
+    } ],
+    "disableableCredentialTypes" : [ "password" ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "user", "offline_access", "uma_authorization", "admin" ],
+    "clientRoles" : {
+      "account" : [ "view-profile", "manage-account" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ "/hr" ]
+  }, {
     "id" : "784ca026-cfaa-422c-88e8-b7565515ff71",
     "createdTimestamp" : 1500048314842,
     "username" : "hruser",
@@ -1857,6 +1887,36 @@
       "account" : [ "manage-account", "view-profile" ]
     },
     "groups" : [ ]
+  }, {
+    "id" : "6f9ccb26-4175-43cb-96fb-2a31b4b384ae",
+    "createdTimestamp" : 1522141983168,
+    "username" : "testadmin",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : false,
+    "firstName" : "test",
+    "lastName" : "admin",
+    "email" : "testadmin@test.com",
+    "credentials" : [ {
+      "type" : "password",
+      "hashedSaltedValue" : "05tcUaYgNzF71eB1HKeaH9IC7Do7JUig2JNLSXiADgLx0YfyOPnL5t7TuZ+Rxj3ttsyLkWqp0TM0UbLWGOvuLQ==",
+      "salt" : "xZovRbq5QU0Cm5aQWEW2bg==",
+      "hashIterations" : 27500,
+      "counter" : 0,
+      "algorithm" : "pbkdf2-sha256",
+      "digits" : 0,
+      "period" : 0,
+      "createdDate" : 1522141994128,
+      "config" : { }
+    } ],
+    "disableableCredentialTypes" : [ "password" ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "user", "offline_access", "uma_authorization", "admin" ],
+    "clientRoles" : {
+      "account" : [ "view-profile", "manage-account" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ "/testgroup" ]
   }, {
     "id" : "331a12d1-766e-4897-b0a8-309ae5caeb25",
     "createdTimestamp" : 1498557164913,
