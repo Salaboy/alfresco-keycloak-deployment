@@ -1,8 +1,8 @@
 {
-  "id": "springboot",
-  "realm": "springboot",
-  "displayName": "keycloak",
-  "displayNameHtml": "keycloak",
+  "id": "activiti",
+  "realm": "activiti",
+  "displayName": "activiti",
+  "displayNameHtml": "activiti",
   "notBefore": 0,
   "revokeRefreshToken": false,
   "refreshTokenMaxReuse": 0,
@@ -43,23 +43,23 @@
         "scopeParamRequired": false,
         "composite": false,
         "clientRole": false,
-        "containerId": "springboot"
+        "containerId": "activiti"
       },
       {
         "id": "3d47a1c5-a2d5-4633-9f1a-ffd160dddffa",
-        "name": "user",
+        "name": "ACTIVITI_USER",
         "scopeParamRequired": false,
         "composite": false,
         "clientRole": false,
-        "containerId": "springboot"
+        "containerId": "activiti"
       },
       {
         "id": "595b880c-3dd4-44e2-9afb-eed40ce05eb7",
-        "name": "admin",
+        "name": "ACTIVITI_ADMIN",
         "scopeParamRequired": false,
         "composite": false,
         "clientRole": false,
-        "containerId": "springboot"
+        "containerId": "activiti"
       },
       {
         "id": "daacbcfe-0f42-4605-bcf6-f3356a16ad0d",
@@ -68,7 +68,7 @@
         "scopeParamRequired": true,
         "composite": false,
         "clientRole": false,
-        "containerId": "springboot"
+        "containerId": "activiti"
       }
     ],
     "client": {
@@ -391,7 +391,7 @@
       "id": "4f7c6cd1-a33b-4906-8c53-7431138d11d4",
       "clientId": "account",
       "name": "${client_account}",
-      "baseUrl": "/auth/realms/springboot/account",
+      "baseUrl": "/auth/realms/activiti/account",
       "surrogateAuthRequired": false,
       "enabled": true,
       "clientAuthenticatorType": "client-secret",
@@ -401,7 +401,7 @@
         "manage-account"
       ],
       "redirectUris": [
-        "/auth/realms/springboot/account/*"
+        "/auth/realms/activiti/account/*"
       ],
       "webOrigins": [],
       "notBefore": 0,
@@ -1835,7 +1835,7 @@
     } ],
     "disableableCredentialTypes" : [ "password" ],
     "requiredActions" : [ ],
-    "realmRoles" : [ "uma_authorization", "user", "offline_access" ],
+    "realmRoles" : [ "uma_authorization", "ACTIVITI_USER", "offline_access" ],
     "clientRoles" : {
       "account" : [ "manage-account", "view-profile" ]
     },
@@ -1881,7 +1881,7 @@
     } ],
     "disableableCredentialTypes" : [ "password" ],
     "requiredActions" : [ ],
-    "realmRoles" : [ "uma_authorization", "user", "offline_access" ],
+    "realmRoles" : [ "uma_authorization", "ACTIVITI_USER", "offline_access" ],
     "clientRoles" : {
       "account" : [ "manage-account", "view-profile" ]
     },
@@ -1907,7 +1907,7 @@
     } ],
     "disableableCredentialTypes" : [ "password" ],
     "requiredActions" : [ ],
-    "realmRoles" : [ "uma_authorization", "admin", "offline_access" ],
+    "realmRoles" : [ "uma_authorization", "ACTIVITI_ADMIN", "offline_access" ],
     "clientRoles" : {
       "realm-management" : [ "manage-users", "manage-clients", "manage-authorization", "manage-events", "manage-realm", "create-client", "impersonation", "realm-admin", "manage-identity-providers" ],
       "broker" : [ "read-token" ],
